@@ -1,5 +1,6 @@
 # Bone-Fracture-Detection
 A Streamlit app using a TensorFlow model to detect bone fractures from X-ray images. Upload an X-ray to get a quick prediction if a fracture is present, helping medical professionals with fast and accurate preliminary diagnosis.
+
 ## Features
 
 - Upload X-ray images and get predictions: **Fractured** or **Not Fractured**  
@@ -37,7 +38,6 @@ A Streamlit app using a TensorFlow model to detect bone fractures from X-ray ima
     streamlit run web_app/streamlit_app.py
     ```
 
----
 
 ## Usage
 
@@ -45,33 +45,30 @@ A Streamlit app using a TensorFlow model to detect bone fractures from X-ray ima
 - Upload an X-ray image (JPG, PNG)  
 - View the fracture detection result along with confidence score  
 
----
-
 ## Project Structure
-Bone-Fracture-Detection/
-├── data/
-│ ├── train/
-│ │ ├── fractured/
-│ │ └── not fractured/
-│ ├── val/
-│ │ ├── fractured/
-│ │ └── not fractured/
-├── inference/
-│ └── predict.py
-├── model/
-│ ├── fracture_classifier.h5
-│ └── train_model.py
-├── web_app/
-│ └── streamlit_app.py
-├── requirements.txt
-└── README.md
+
+- data/
+  - train/
+    - fractured/
+    - not fractured/
+  - val/
+    - fractured/
+    - not fractured/
+- inference/
+  - predict.py
+- model/
+  - fracture_classifier.h5
+  - train_model.py
+- web_app/
+  - streamlit_app.py
+- requirements.txt
+- README.md
+
 
 ## Notes
 
 - The model file `fracture_classifier.h5` is about 75 MB. For better handling of large files, consider using [Git Large File Storage (Git LFS)](https://git-lfs.github.com/).  
 - This app is for educational/demo purposes and not for clinical use.  
-
----
 
 ## License
 
